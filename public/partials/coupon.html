@@ -1,0 +1,78 @@
+<span class="pull-left">Updated at:{{updatedAt|date:"MM/dd/yyyy ':' h:mm:ss"}}</span>
+<span class="pull-right">Available Games:{{coupon.length}}</span><br>
+<div class="form-group searchInput">
+  <input type="text" class="form-control" placeholder="Search for event..." ng-model="query">
+</div>
+<table class="couponTable table table-hover table-bordered table-responsive  ">
+	<thead>
+	<td>
+	Time
+	</td>
+	<td>
+	Code
+	</td>
+	<td>
+	1
+	</td>
+	<td>
+	Team1
+	</td>
+	<td>
+	X
+	</td>
+	<td>
+	Team2
+	</td>
+	<td>
+	2
+	</td>
+	</thead>
+	<tr ng-repeat="c in coupon | filter:query | orderBy:'gameId'">
+		<td>
+			{{c.time|date:"h:mma"}}
+		</td>
+		<td>
+			{{c.matchCode}}
+		</td>
+		<td>
+			{{c.code1}}
+		</td>
+		<td>
+			{{c.firstTeamName}}
+		</td>
+		<td>
+			{{c.codeX}}
+		</td>
+		<td>
+			{{c.secondTeamName}}
+		</td>
+		<td>
+			{{c.code2}}
+		</td>
+	</tr>
+</table>
+
+<div class="opapCouponPanelWrapper" >
+	<div class="panel panel-default" ng-repeat="c in coupon | filter:query | orderBy:'gameId'">
+  <div class="panel-heading">{{c.firstTeamName}} - {{c.secondTeamName}}</div>
+  <div class="panel-body opapCouponPanel">
+  	<table class="table table-hover table-bordered table-responsive">
+  		<tr>
+  			<td>Time</td><td>{{c.time|date:"h:mma"}}</td>
+  		</tr>
+  		<tr>
+  			<td>Code</td><td>{{c.matchCode}}</td>
+  		</tr>
+  		<tr>
+  			<td>1</td><td>{{c.code1}}</td>
+  		</tr>
+  		<tr>
+  			<td>X</td><td>{{c.codeX}}</td>
+  		</tr>
+  		<tr>
+  			<td>2</td><td>{{c.code2}}</td>
+  		</tr>
+  	</table>
+  </div>
+</div>
+</div>

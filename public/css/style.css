@@ -1,0 +1,92 @@
+body{
+	background: #FFECB3;
+}
+
+.form-control input{
+	color:white;
+}
+
+.resultsOpap{
+	background: #E0F7FA;
+}
+.glyp{
+	margin-right: 10px;
+	color:#d11141;
+}
+.couponTable{
+	background:#f7fcfa;
+	color:#272a2d;
+	-webkit-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    -moz-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+
+}
+
+table thead{
+	text-align: center;
+	font-size: 25px;
+}
+.wrapper{
+	
+	-webkit-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    -moz-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+
+}
+
+.notifier{
+	 position: fixed;
+    width: 100%;
+    left: 0;
+    background: #243949;
+    opacity: 1 !important ;
+    z-index: 1051;
+}
+
+article{
+	padding: 30px;
+	background: #4CAF50;
+}
+article h2{
+	color:#FFECB3;
+	
+}
+
+div{
+	font-family: 'OpenSans';
+	color:white;
+	font-size: 19px;
+}
+.opapCouponPanel{
+	background:#f7fcfa;
+	color:#272a2d !important;
+	-webkit-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    -moz-box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+    box-shadow: 9px 10px 39px -16px rgba(0,0,0,0.4);
+}
+.opapCouponPanelWrapper{
+	display: none;
+}
+footer{
+	background: #00695C !important;
+	padding: 17px;
+	text-align: center;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("//themes.googleusercontent.com/static/fonts/opensans/v6/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format('woff');
+}
+
+@media (max-width: 800px) {
+  .opapCouponPanelWrapper {
+    display: inherit;
+  }
+  .couponTable{
+  	display: none;
+  }
+}
+

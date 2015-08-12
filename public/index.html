@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="betlay">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Betlay v1.0</title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<header>
+
+
+		<!-- new naw -->
+			<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BetLay</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+					<li class="" role="presentation"><a href="#/"><span class="glyp glyphicon glyphicon-home"></span>Home</a></li>
+					<li role="presentation"><a href="#/coupon"><span class="glyp glyphicon glyphicon-file"></span>Coupon</a></li>
+					<li role="presentation"><a href="#/betlay"><span class="glyp glyphicon glyphicon-briefcase"></span>Betlay</a></li>
+					<li role="presentation"><a href="#/logout"><span class="glyp glyphicon glyphicon-off"></span>Logout</a></li>
+				</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		</header>
+		<div class="wrapper container-fluid">
+			<div>
+				<article><ng-view></ng-view></article>
+				
+			</div>
+		</div>
+		<footer class="navbar navbar-default navbar-fixed-bottom">
+		<div>Desinged and Developer by Charalampos Sykovaridis</div></footer>
+
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+</html>
